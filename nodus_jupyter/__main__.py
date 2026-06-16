@@ -35,9 +35,10 @@ def _install(user: bool = False, prefix: str | None = None) -> None:
 
 
 def _run(connection_file: str) -> None:
+    from ipykernel.kernelapp import IPKernelApp
     from nodus_jupyter.kernel import NodusKernel
 
-    NodusKernel.launch_instance(connection_file=connection_file)
+    IPKernelApp.launch_instance(kernel_class=NodusKernel, argv=["-f", connection_file])
 
 
 def main() -> None:
