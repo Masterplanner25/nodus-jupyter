@@ -1,5 +1,7 @@
 # nodus-jupyter
 
+> **Status:** v0.1.0 — published on [PyPI](https://pypi.org/project/nodus-jupyter/).
+
 Jupyter kernel for the [Nodus](https://github.com/Masterplanner25/Nodus) language. Write and run `.nd` files directly in JupyterLab, Jupyter Notebook, or VS Code notebooks.
 
 ## Install
